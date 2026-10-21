@@ -19,6 +19,12 @@ public class Jugador {
         this.dorsal = dorsal;
     }
 
+    public Jugador(String nombre, String posicion, String dorsal){
+        this.nombres = nombre;
+        this.posicion = posicion;
+        this.dorsal = dorsal;
+    }
+
     //getters and setters
 
     public String getNombres() {

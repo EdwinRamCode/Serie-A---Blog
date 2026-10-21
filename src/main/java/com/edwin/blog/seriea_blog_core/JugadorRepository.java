@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface JugadorRepository {
 
-    public void save();
-    public Jugador findById(String nombre);
-    public List<Jugador> showAll();
+    public void save(Jugador jugador);
+    public JugadorDTO findById(String nombre);
+    public List<JugadorDTO> showAll();
 }
