@@ -1,5 +1,15 @@
-package com.edwin.blog.seriea_blog_core;
+package com.edwin.blog.seriea_blog_core.domain;
 
+/**
+ * Representa un jugador profesional perteneciente a un equipo
+ * de la Serie A.
+ *
+ * Esta clase almacena información relevante del futbolista,
+ * incluyendo datos personales, posición de juego, edad y
+ * equipo al que pertenece.
+ *
+ * @author Edwin
+ */
 public class Jugador {
 
     private String nombres;

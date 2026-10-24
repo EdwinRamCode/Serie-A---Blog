@@ -1,10 +1,13 @@
-package com.edwin.blog.seriea_blog_core;
+package com.edwin.blog.seriea_blog_core.repository;
+
+import com.edwin.blog.seriea_blog_core.domain.Jugador;
+import com.edwin.blog.seriea_blog_core.dto.JugadorDTO;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class JugadorRepositoryImpl implements JugadorRepository{
+public class JugadorRepositoryImpl implements JugadorRepository {
 
     List<Jugador> listJugadores = new ArrayList<>(Arrays.asList(
             new Jugador("Edwin Ariel", "Ramos Alvarez", "18"),

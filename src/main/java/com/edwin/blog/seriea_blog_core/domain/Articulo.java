@@ -1,8 +1,17 @@
-package com.edwin.blog.seriea_blog_core;
+package com.edwin.blog.seriea_blog_core.domain;
 
+/**
+ * Clase base que representa un artículo publicado en el blog.
+ *
+ * Un artículo contiene información general como título,
+ * contenido, autor y fecha de publicación. Sirve como
+ * entidad principal para los distintos tipos de publicaciones
+ * disponibles en el sistema.
+ *
+ * @author Edwin
+ */
 abstract class Articulo {
 
-    //por ahora se define fecha como string
     private String titulo;
     private String contenido;
     private String fecha;

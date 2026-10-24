@@ -1,5 +1,10 @@
 package com.edwin.blog.seriea_blog_core;
 
+import com.edwin.blog.seriea_blog_core.domain.ArticuloAnalisis;
+import com.edwin.blog.seriea_blog_core.domain.CronicaPartido;
+import com.edwin.blog.seriea_blog_core.domain.Equipo;
+import com.edwin.blog.seriea_blog_core.domain.Jugador;
+
 public class Main {
 
     public static void main(String[] args) {

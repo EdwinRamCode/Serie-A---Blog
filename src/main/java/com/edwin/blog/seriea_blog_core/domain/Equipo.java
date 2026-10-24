@@ -1,7 +1,16 @@
-package com.edwin.blog.seriea_blog_core;
+package com.edwin.blog.seriea_blog_core.domain;
 
+/**
+ * Representa un equipo participante en la Serie A.
+ *
+ * Contiene la información básica de un club, como su nombre,
+ * ciudad, estadio y la colección de jugadores asociados.
+ * Esta entidad permite modelar la relación entre equipos
+ * y jugadores dentro del dominio de la aplicación.
+ *
+ * @author Edwin
+ */
 public class Equipo {
-    //nombre, ciudad, estadio, fundacion
 
     private String nombre;
     private String ciudad;
@@ -16,8 +25,6 @@ public class Equipo {
         this.nombreEstadio = nombreEstadio;
         this.anioFundacion = anioFundacion;
     }
-
-    //getters and setters
 
     public String getNombre() {
         return nombre;

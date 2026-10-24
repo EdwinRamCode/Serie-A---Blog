@@ -1,4 +1,6 @@
-package com.edwin.blog.seriea_blog_core;
+package com.edwin.blog.seriea_blog_core.dto;
+
+import com.edwin.blog.seriea_blog_core.domain.Jugador;
 
 public record JugadorDTO(String nombre, String posicion, String dorsal) {
 
