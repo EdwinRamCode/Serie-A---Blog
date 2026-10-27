@@ -37,5 +37,25 @@ public class JugadorRepositoryImpl implements JugadorRepository {
                 .map(JugadorDTO::toDTO) // Metodo mapper en accion
                 .toList();
     }
+
+    @Override
+    public void delete(Jugador jugador) {
+        listJugadores.remove(jugador);
+    }
+
+    @Override
+    public void update(Jugador jugadorActualizado) {
+        for (Jugador jugador : listJugadores){
+            if (jugador.getDorsal().equals(jugadorActualizado.getDorsal())){
+                jugador.setNombres(jugadorActualizado.getNombres());
+                jugador.setApellidos(jugadorActualizado.getApellidos());
+                jugador.setDorsal(jugadorActualizado.getDorsal());
+                jugador.setEdad(jugadorActualizado.getEdad());
+                jugador.setPosicion(jugadorActualizado.getPosicion());
+                break;
+            }
+        }
+
+    }
 }
 

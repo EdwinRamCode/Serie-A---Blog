@@ -21,4 +21,6 @@ public interface JugadorRepository {
     public void save(Jugador jugador);
     public JugadorDTO findById(String nombre);
     public List<JugadorDTO> showAll();
+    public void delete(Jugador jugador);
+    public void update(Jugador jugador);
 }
