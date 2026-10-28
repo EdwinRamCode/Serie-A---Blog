@@ -1,5 +1,7 @@
 package com.edwin.blog.seriea_blog_core.domain;
 
+import java.util.Objects;
+
 /**
  * Representa un equipo participante en la Serie A.
  *
@@ -69,5 +71,17 @@ public class Equipo {
                 ", nombreEstadio='" + nombreEstadio + '\'' +
                 ", anioFundacion='" + anioFundacion + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Equipo equipo = (Equipo) o;
+        return Objects.equals(nombre, equipo.nombre);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(nombre);
     }
 }
